@@ -237,7 +237,7 @@ svg * {
   translate: 0 -50%;
   content: "";
   right: 0;
-  background: url("./../../icons/arrow-top-right_black.svg") center no-repeat var(--color-accent);
+  background: url("./../icons/arrow-top-right_black.svg") center no-repeat var(--color-accent);
   border-radius: 50%;
 }
 
@@ -398,7 +398,7 @@ button[aria-label]::before {
   }
 }
 .icon__yellow-arrow::after {
-  background-image: url("./../../icons/arrow-top-right_yellow.svg");
+  background-image: url("./../icons/arrow-top-right_yellow.svg");
 }
 .icon__yellow-eye::after {
   background-image: url("./../../icons/eye.svg");
@@ -1499,10 +1499,10 @@ button[aria-label]::before {
   --size: 1.5rem;
   width: var(--size);
   height: var(--size);
-  background: url("./../../icons/star.svg") center/contain no-repeat;
+  background: url("./../icons/star.svg") center/contain no-repeat;
 }
 .rating-view__star.is-active {
-  background: url("./../../icons/star-yellow.svg") center/contain no-repeat;
+  background: url("./../icons/star-yellow.svg") center/contain no-repeat;
 }
 @media (width <= 90.06125rem) {
   .rating-view__star {
