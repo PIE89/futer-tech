@@ -1,0 +1,48 @@
+@use "../helpers/" as *;
+
+.section {
+  &__header {
+    padding-block: fluid(120, 40);
+    background-color: var(--color-dark-10);
+
+    &-inner {
+      &:has(.section__header__link) {
+        display: grid;
+
+        align-items: center;
+        column-gap: 1rem;
+
+        @include mobile-above {
+          grid-template-columns: 1fr auto;
+        }
+
+        @include mobile {
+          row-gap: rem(30);
+        }
+      }
+    }
+
+    &-info {
+      display: grid;
+      align-items: start;
+      row-gap: rem(16);
+
+      @include laptop {
+        row-gap: rem(10);
+      }
+    }
+
+    &__link {
+      max-width: rem(360);
+    }
+  }
+
+  &__title {
+    font-family: var(--font-family-accent);
+    font-weight: 400;
+  }
+
+  &__body {
+    border-block: var(--border);
+  }
+}

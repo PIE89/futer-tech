@@ -1,0 +1,36 @@
+@use "../helpers/" as *;
+
+.item {
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(30, 20);
+
+  &__img {
+    object-fit: cover;
+    border-radius: rem(12);
+
+    @include tablet {
+      align-self: center;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(14, 10);
+
+    &-subtitle {
+      color: var(--color-gray-60);
+    }
+  }
+
+  &__actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: rem(20);
+
+    @include laptop {
+      column-gap: rem(10);
+    }
+  }
+}
